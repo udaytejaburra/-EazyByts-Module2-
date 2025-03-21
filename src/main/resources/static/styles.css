@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 32px;
+}
+
+.section {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input, select, button {
+    margin: 5px 0;
+    padding: 10px;
+    width: 100%;  /* ✅ Make form elements full width on mobile */
+    box-sizing: border-box;
+}
+
+button {
+    cursor: pointer;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+#portfolio, #stocks {
+    margin-top: 15px;
+    overflow-x: auto;  /* ✅ Prevent table overflow on small screens */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+/* ✅ Responsive for Mobile Screens */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .section {
+        padding: 15px;
+    }
+
+    table, th, td {
+        font-size: 14px;
+    }
+}
